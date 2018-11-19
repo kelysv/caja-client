@@ -11,7 +11,7 @@ unamba
 > :shipit: dixroby ac .:smile: ![GitHub Logo](/Images/eapiis.jpg)
 > unamba - Apurimac
 
-#Comandos básicos de GIT
+# Comandos básicos de GIT
 >git config
 Uno de los comandos más usados en git es git config, que puede ser usado para establecer una configuración específica de usuario, como sería el caso del email, un algoritmo preferido para diff, nombre de usuario y tipo de formato, etc… Por ejemplo, el siguiente comando se usa para establecer un email:
 git config --global user.email sam@google.com
@@ -120,19 +120,30 @@ git cat-file –p d670460b4b4aece5915caf5c68d12f560a9fe3e4
 git grep
 Este comando le permite al usuario buscar en los árboles de contenido cualquier frase o palabra. Por ejemplo, para buscar por www.tupaginaweb.com en todos los archivos se usaría:
 git grep “www.tupaginaweb.com”
-gitk
+>gitk
 Este es la interfaz gráfica para un repositorio local que puede invocar escribiendo y ejecutando:
 gitk
-git instaweb
+
+>git instaweb
 Con este comando un servidor web puede correr interconectado con el repositorio local. Un navegador web también está automáticamente dirigido a el:
 git instaweb –http=webrick
-git gc
-Para optimizar el repositorio por medio de una recolección de basura, que limpiara archivos innecesarios y los optimizara, usa:git hc
-git archive
-Este comando le permite al usuario crear archivos zip o tar que contengan los constituyentes de un solo árbol de repositorio:git archive – -format=tar master
+
+>git gc
+Para optimizar el repositorio por medio de una recolección de basura, que limpiara archivos innecesarios y los optimizara, usa:
+git hc
+
+>git archive
+Este comando le permite al usuario crear archivos zip o tar que contengan los constituyentes de un solo árbol de repositorio:
+git archive – -format=tar master
+
+>git prune
+Con este comando los objetos que no tengan ningún puntero entrante serán eliminados:
 git prune
-Con este comando los objetos que no tengan ningún puntero entrante serán eliminados:git prune
+
+>git fsck
+Para poder hacer un chequeo de integridad del sistema de archivos git, usa este comando. Cualquier objeto corrompido será detectado:
 git fsck
-Para poder hacer un chequeo de integridad del sistema de archivos git, usa este comando. Cualquier objeto corrompido será detectado:git fsck
-git rebase
-Este comando se usa para la re aplicación de los compromisos en otra rama. Por ejemplo:git rebase master
+
+>git rebase
+Este comando se usa para la re aplicación de los compromisos en otra rama. Por ejemplo:
+git rebase master
