@@ -1,16 +1,12 @@
 # UNAMBA - EAPIIS 
+![GitHub Logo](/Images/unamba.png)
 
 * 20182
     * curso de ATI
     	* SUBIENDO A GIThub
->LOGO EAPIIS
-    ![GitHub Logo](/Images/eapiis.jpg)
+    
     [GITHUB](https://github.com/20182-ATI/caja-client.git)
 unamba
-![GitHub Logo](/Images/unamba.png)
- 
-
-
 > repositorio ATI
-> :shipit: dixroby ac .:smile:
+> :shipit: dixroby ac .:smile: ![GitHub Logo](/Images/eapiis.jpg)
 > unamba - Apurimac
