@@ -20,7 +20,7 @@ Uno de los comandos más usados en git es git config, que puede ser usado para es
 Este comando se usa para crear un nuevo repertorio GIT:
 > *git init*
 
-###git add
+### git add
 Este comando puede ser usado para agregar archivos al index. Por ejemplo, el siguiente comando agrega un nombre de archivo temp.txt en el directorio local del index:
 > *git add temp.txt*
 
@@ -54,41 +54,39 @@ El comando git se usa para conectar a un repositorio remoto. El siguiente comand
 Este comando te permite conectar al usuario con el repositorio local a un servidor remoto:
 >git remote add origin <93.188.160.58>
 
->git branch
+### git branch
 Este comando se usa para listar, crear o borrar ramas. Para listar todas las ramas se usa:
-
 >git branch
 para borrar la rama:
 git branch -d <branch-name>
 
->git pull
+### git pull
 Para poder fusionar todos los cambios que se han hecho en el repositorio local trabajando, el comando que se usa es:
-git pull
+>git pull
 
->git merge
+### git merge
 Este comando se usa para fusionar una rama con otra rama activa:
-git merge <branch-name>
+>git merge <branch-name>
 
->git diff
+### git diff
 Este comando se usa para hacer una lista de conflictos. Para poder ver conflictos con el archivo base usa:
-git diff --base <file-name>
+>git diff --base <file-name>
 El siguiente comando se usa para ver los conflictos que hay entre ramas que están por ser fusionadas para poder fusionarlas sin problemas:
-
-git diff <source-branch> <target-branch>
+>git diff <source-branch> <target-branch>
 Para solo ver una lista de todos los conflictos presentes usa:
 git diff
 
->git tag
+### git tag
 Etiquetar se usa para marcar commits específicos con asas simples. Por ejemplo:
 git tag 1.1.0 <instert-commitID-here>
 
->git log
+### git log
 Ejecutar este comando muestra una lista de commits en una rama junto con todos los detalles. Por ejemplo:
-commit 15f4b6c44b3c8344caasdac9e4be13246e21sadw
+>commit 15f4b6c44b3c8344caasdac9e4be13246e21sadw
 Author: Alex Hunter <alexh@gmail.com>
 Date:   Mon Oct 1 12:56:29 2016 -0600
 
->git reset
+### git reset
 Para resetear el index y el directorio que está trabajando al último estado comprometido se usa este comando:
 git reset - -hard HEAD
 
