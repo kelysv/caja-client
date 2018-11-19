@@ -144,3 +144,5 @@ Para poder hacer un chequeo de integridad del sistema de archivos git, usa este 
 ### git rebase
 Este comando se usa para la re aplicación de los compromisos en otra rama. Por ejemplo:
 >git rebase master
+
+> :shipit: atte :dixroby ac .:smile: ![GitHub Logo](/Images/log.jpg)
