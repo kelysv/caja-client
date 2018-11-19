@@ -48,7 +48,7 @@ El comando checkout se puede usar para crear ramas o cambiar entre ellas. Por ej
 Para cambiar de una rama a otra solo usa:
 >git checkout <branch-name>
 
-###git remote
+### git remote
 El comando git se usa para conectar a un repositorio remoto. El siguiente comando muestra los repositorios remotos que están configurados actualmente:
 >git remote -v
 Este comando te permite conectar al usuario con el repositorio local a un servidor remoto:
@@ -78,7 +78,7 @@ git diff
 
 ### git tag
 Etiquetar se usa para marcar commits específicos con asas simples. Por ejemplo:
-git tag 1.1.0 <instert-commitID-here>
+>git tag 1.1.0 <instert-commitID-here>
 
 ### git log
 Ejecutar este comando muestra una lista de commits en una rama junto con todos los detalles. Por ejemplo:
@@ -90,56 +90,57 @@ Date:   Mon Oct 1 12:56:29 2016 -0600
 Para resetear el index y el directorio que está trabajando al último estado comprometido se usa este comando:
 git reset - -hard HEAD
 
->git rm
+### git rm
 Este comando se puede usar para remover archivos del index y del directorio que está trabajando:
-git rm filename.txt
+>git rm filename.txt
 
->git stash
+### git stash
 Este es uno de los comandos menos conocidos, pero ayuda a salvar cambios que no están por ser comprometidos inmediatamente, pero temporalmente:
 git stash
 
->git show
+### git show
 Se usa para mostrar información sobre cualquier objeto git. Por ejemplo:
-git show
+>git show
 
->git fetch
+### git fetch
 Este comando le permite al usuario buscar todos los objetos de un repositorio remoto que actualmente no reside en el directorio local que está trabajando. Por ejemplo:
-git fetch origin
+>git fetch origin
 
->git ls-tree
+### git ls-tree
 Para ver un objeto de árbol junto con el nombre y modo de cada uno de ellos, y el valor blob´s SHA-1, se usa:
-git ls-tree HEAD
+>git ls-tree HEAD
 
->git cat-file
+### git cat-file
 Usando el valor SHA-1, se puede ver el tipo de objeto usando este comando. Por ejemplo:
-git cat-file –p d670460b4b4aece5915caf5c68d12f560a9fe3e4
+>git cat-file –p d670460b4b4aece5915caf5c68d12f560a9fe3e4
 git grep
 Este comando le permite al usuario buscar en los árboles de contenido cualquier frase o palabra. Por ejemplo, para buscar por www.tupaginaweb.com en todos los archivos se usaría:
 git grep “www.tupaginaweb.com”
->gitk
+
+### gitk
 Este es la interfaz gráfica para un repositorio local que puede invocar escribiendo y ejecutando:
-gitk
+>gitk
 
->git instaweb
+### git instaweb
 Con este comando un servidor web puede correr interconectado con el repositorio local. Un navegador web también está automáticamente dirigido a el:
-git instaweb –http=webrick
+>git instaweb –http=webrick
 
->git gc
+### git gc
 Para optimizar el repositorio por medio de una recolección de basura, que limpiara archivos innecesarios y los optimizara, usa:
-git hc
+>git hc
 
->git archive
+### git archive
 Este comando le permite al usuario crear archivos zip o tar que contengan los constituyentes de un solo árbol de repositorio:
-git archive – -format=tar master
+>git archive – -format=tar master
 
->git prune
+### git prune
 Con este comando los objetos que no tengan ningún puntero entrante serán eliminados:
-git prune
+>git prune
 
->git fsck
+### git fsck
 Para poder hacer un chequeo de integridad del sistema de archivos git, usa este comando. Cualquier objeto corrompido será detectado:
-git fsck
+>git fsck
 
->git rebase
+### git rebase
 Este comando se usa para la re aplicación de los compromisos en otra rama. Por ejemplo:
-git rebase master
+>git rebase master
